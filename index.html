@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - 🌿 GREEN VERIFY 🌟</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(120deg, #fbc2eb, #a6c1ee); /* Soft pastel gradient */
+      color: #2e4c2f;
+      position: relative; /* Ensure absolute positioning works */
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header {
+      background: #8e44ad; /* Playful purple header */
+      color: #ffffff; /* Contrast for text */
+      padding: 10px 0; /* Reduced padding */
+      text-align: center;
+      border-bottom: 3px solid #ffffff; /* Slightly thinner border */
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem; /* Reduced font size */
+      letter-spacing: 1.5px;
+    }
+
+    header p {
+      font-size: 0.9rem; /* Smaller subtitle */
+      margin: 5px 0 0;
+      font-style: italic;
+    }
+
+    .about-section {
+      background: #ffffff;
+      padding: 30px;
+      margin-top: 20px;
+      border-radius: 20px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      color: #2e4c2f;
+    }
+
+    .about-section p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #3c6e47;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .feature {
+      background: #ffccbc; /* Pastel orange box */
+      color: #4e342e;
+      border-radius: 15px;
+      padding: 20px;
+      width: 220px;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .feature:hover {
+      transform: scale(1.1);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      background: #ffab91; /* Brighter pastel on hover */
+      color: #000000; /* Text changes to black */
+    }
+
+    .feature h3 {
+      font-size: 1.2rem;
+      margin-bottom: 5px;
+    }
+
+    .slogan {
+      background: #8e44ad; /* Purple background for visibility */
+      color: #ffffff; /* Text color for contrast */
+      text-align: center;
+      padding: 15px; /* Reduced padding */
+      border-radius: 10px; /* Slightly smaller border radius */
+      margin: 20px auto; /* Centered with spacing */
+      font-size: 1.1rem; /* Reduced font size */
+      font-style: italic;
+      max-width: 600px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Lighter shadow */
+    }
+
+    .verify-button {
+      background-color: #4caf50; /* Green button */
+      color: #ffffff; /* White text */
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      position: absolute;
+      top: 20px;
+      right: 20px; /* Positioning to the top right corner */
+    }
+
+    .verify-button:hover {
+      background-color: #43a047; /* Darker green on hover */
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      transform: translateY(-2px); /* Slight hover effect */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌿 GREEN VERIFY 🌟</h1>
+    <p>🌎 Certifying Sustainability. Inspiring Change. 🌟</p>
+  </header>
+
+  <div class="container">
+    <div class="about-section">
+      <p>
+        At <strong>🌿 GREEN VERIFY 🌿</strong>, we simplify eco-certifications to help build a brighter, greener future. 💡✨ Together, we grow sustainable legacies! 🌱
+      </p>
+
+      <div class="features">
+        <div class="feature">
+          <h3>🏡 Sustainable Sites</h3>
+          <p>Building eco-friendly spaces.</p>
+        </div>
+        <div class="feature">
+          <h3>⚡ Energy Efficiency</h3>
+          <p>Saving power for a better planet.</p>
+        </div>
+        <div class="feature">
+          <h3>🌬️ Indoor Air Quality</h3>
+          <p>Breathing cleaner, healthier air.</p>
+        </div>
+        <div class="feature">
+          <h3>💧 Water Management</h3>
+          <p>Preserving every drop responsibly.</p>
+        </div>
+        <div class="feature">
+          <h3>♻️ Waste Reduction</h3>
+          <p>Turning waste into opportunities.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="slogan">
+      🌟 "Let’s grow 🌱 a greener tomorrow 🌎 together!" 🌟
+    </div>
+  </div>
+
+  <!-- Verify Button placed in top-right corner -->
+  <button class="verify-button" onclick="openStreamlitApp()">Verify</button>
+
+  <script>
+    function openStreamlitApp() {
+      // Open the Streamlit app in a new tab
+      window.open("http://localhost:8501", "_blank");
+    }
+  </script>
+</body>
+</html>
